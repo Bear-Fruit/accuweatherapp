@@ -1,0 +1,495 @@
+
+main{
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100vh;
+    width: 100vw;
+    color: white; 
+    
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:Blanka;
+} 
+body{
+    margin:0;
+ 
+}
+
+
+.card{
+    grid-area: 3 / 5/ 7/ 7;
+    background-color: rgba(36, 36, 36, 0.424);
+    background-color: #2424246c;
+    
+    
+    border-radius: 50vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows:  repeat(10, 1fr);
+    color: rgba(255, 255, 255, 0.801);   
+}
+.error{
+    
+    grid-area: 2 / 7 / 3 / 8;
+}
+.one{
+   
+    grid-area: 9 / 3/ 11 / 5;
+}
+.two{
+    
+    grid-area: 9 / 5 / 11 / 7;
+}
+.three{
+    
+    grid-area: 9 / 7 / 11 / 9;
+}
+.four{
+    
+    grid-area: 9 / 9 / 11 / 11;
+}
+.five{
+   
+    grid-area: 9 / 1 / 11 / 3;
+}
+.minicard{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr repeat(9, 1fr);
+    border-radius: 0;
+    border-left: rgb(37, 37, 37) solid 1px;
+    background-color: #24242485;
+    font-size: 10px !important;
+}
+.card-day{
+    grid-area: 1 / 6/ 2/ 9;
+    height: 100%;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    text-align: -webkit-center;
+}
+.card-date{
+    grid-area: 1 / 2 / 2 / 6;
+    height: 100%;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;  
+    text-align: -webkit-center;
+}
+.card-icon{
+    grid-area: 3/ 3 / 7 / 8;
+    height: 100%;
+    width: 100%;
+  
+}
+.card-max{
+    grid-area: 6 / 3 / 7 / 4;
+    height: 100%;
+    width: 100%;
+ 
+    font-size: 80px;
+    display: block;
+    top:10;
+}
+.card-min{
+    grid-area: 6 / 8 / 7 / 9;
+    height: 100%;
+    width: 100%;
+
+    font-size: 40px;
+    
+   
+}
+.card-des{
+    grid-area: 9/ 2 / 10 / 10;
+    height: 100%;
+    width: 100%;
+    
+   
+}
+
+.card-date1{
+    grid-area: 5 / 9 / 9 / 10;
+    font-size: 20px;
+    writing-mode: vertical-rl;
+    
+    justify-self: end;
+    background-color: #1fc8db;
+    width: 50%;
+    
+ }
+ .card-icon1{
+    grid-area: 3/ 3 / 7 / 8;
+    height: 100%;
+    width: 100%;
+
+}
+.card-max1{
+    grid-area: 1/ 4 / 4 / 9;
+    height: 100%;
+    width: 100%;
+    text-shadow: 0px 0px 8px rgba(255,255,255,0.65),0px 0px 8px rgba(255,255,255,0.65)/* glow */,
+    1px 1px 5px rgba(0,0,0,0.8)/* drop shadow*/;
+    font-size: 60px;
+    text-align: center;
+    text-align: -webkit-center;
+    display: block;
+    top:10;
+}
+.card-min1{
+    grid-area: 4 / 4 / 5 / 9;
+    height: 100%;
+    width: 100%;
+   
+    font-size: 15px;
+    overflow: hidden;
+    text-align: center;
+    text-align: -webkit-center;
+   
+}
+.card-des1{
+    grid-area: 9/ 3 / 10 / 9;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+    font-size: 15px;
+   
+}
+.card-icon1{
+    grid-area: 5/ 3 / 9 / 9;
+    height: 100%;
+    width: 100%;
+ 
+}
+.card-icon1 img{
+    width: 13vw;
+    height: 8vw;
+    align-content: center;
+}
+.card-icon{
+    grid-area: 2/ 3 / 9 / 9;
+    height: 100%;
+    width: 100%;
+ 
+}
+.card-icon img{
+    width: 10vw;
+    height: 6vw;
+    align-content: center;
+}
+@font-face {
+    font-family: Blanka;
+    src: url("BLANKAFont/Blanka-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Blanka;
+    font-weight: bold;
+    src: url("BLANKAFont/Blanka-Regular.otf") format("opentype");
+} 
+.back{
+    grid-area: 1 / 1 / 11 / 11;
+}
+.title{
+    grid-area: 2 / 2 / 3 / 5;
+    font-family:Blanka;font-size:60px;
+}
+.city{
+    grid-area: 6 / 7/ 7/ 9;
+}
+#stats{
+    display:none;
+}
+.more{
+    grid-area: 4 / 3/ 5/ 4;
+    z-index: 5;
+}
+.more img{
+    width: 10vh;
+    height: 10vh;
+    align-content: center;
+    text-shadow: 0px 0px 8px rgba(255,255,255,0.65),0px 0px 8px rgba(255,255,255,0.65)/* glow */,
+    1px 1px 5px rgba(0,0,0,0.8)/* drop shadow*/;
+    
+}
+
+#myBtn{
+    background-color: hsla(0, 0%, 14%, 0);
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.158); /* Black w/ opacity */
+    font-family:Blanka;
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #b6192391;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+  }
+  
+  .modal-main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  .modal-element{
+      background-color: #c7262688;
+      background-color: #b6192391;
+      width: 150px;
+      height:150px;
+      box-shadow: 0 0 10px 3px rgb(168, 10, 10);
+    display: flex;
+    flex-direction: column;
+    color: #22b2b2;
+    font-size: 16px;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  .more-img{
+    width:100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .modal-element:hover {
+    background-color: #92ffffbb;
+    box-shadow: 0 0 10px 3px #22b2b2;
+    display: flex;
+    flex-direction: column;
+    color: #22b2b2;
+}
+
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 600px) {
+      body{
+          background-color: firebrick !important;
+      }
+      .back{
+          display:none;
+      }
+        main{
+            display:grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            height: 120vh;
+            width: 100vw;
+            background-color: firebrick !important;
+            align-content: center;
+        } 
+        .card{
+            width: 80vw;
+            height:80vw;
+            
+            border-radius: 40vw; 
+            margin-left: 5%;
+            
+        }
+        .title{
+            grid-area: 1 / 2 / 4 / 10;
+            font-size:50px;
+        }
+        .city{
+            display: none;
+        }
+        .card-date1{
+            
+            font-size: 15px;
+            background-color: #1fc8db;
+            width: 20%;
+            height: 10%;
+            float: right;
+            
+         }
+         .card-icon1{
+            grid-area: 3/ 3 / 7 / 8;
+            height: 100%;
+            width: 100%;
+        
+        }
+        .card-max1{
+            height: 10%;
+            width: 10%;
+            text-shadow: 0px 0px 8px rgba(255,255,255,0.65),0px 0px 8px rgba(255,255,255,0.65)/* glow */,
+            1px 1px 5px rgba(0,0,0,0.8)/* drop shadow*/;
+            font-size: 60px;
+            text-align: center;
+            text-align: -webkit-center;
+            margin-left: 40%;
+    
+        }
+        .card-min1{
+            
+            height: 10%;
+            width: 30%;
+            margin-left: 40%;
+            margin-top: 17%;
+            font-size: 8px;
+        
+        }
+        .card-des1{
+            height: 10%;
+            width: 10%;
+            text-align: center;
+            text-align: -webkit-center;
+            font-size: 10px;
+            position: relative;
+            bottom: 0;
+           
+        }
+        .card-icon1{
+            height: 10%;
+            width: 10%;
+            margin-left:20%;
+         
+        }
+        .card-icon1 img{
+            width: 13vw;
+            height: 8vw;
+            align-content: center;
+        }
+        .error{
+            grid-area: 2 / 7 / 3 / 10;   
+        }
+        .more{
+            grid-area: 2 / 3/ 3/ 6;
+            
+        }
+        .one{
+            grid-area: 8 / 1/ 9 / 11;
+        }
+        .two{
+            grid-area: 9 / 1 / 10 / 11;
+        }
+        .three{
+            grid-area: 10 / 1 / 11 / 11;
+        }
+        .four{
+            display: none !important;
+        }
+        .five{
+            display: none !important ;
+        }
+        .minicard{
+            border-top: rgb(37, 37, 37) solid 1px;
+            background-color: hsla(0, 0%, 14%, 0.522);
+            font-size: 10px !important;
+            height: 20%;
+        }
+        .city{
+            display: none;
+        }
+        .card-icon img{
+            width: 10vh;
+            height: 10vh;
+            align-content: center;
+
+        }
+        
+        .card-icon1 img{
+            width: 50vw;
+            height: 40vw;
+            align-content: center;
+        }
+        .card-day{
+            font-size: 35px;
+            text-align: center;
+            display: inline;
+            margin-left: 10%; 
+            
+        }
+        .card-date{
+            display: inline;
+            font-size: 35px;
+            text-align: center;
+            text-align: -webkit-center;
+            margin-left: 5%;  
+        }
+        .card-max{
+           margin-top: 5%;
+           margin-left: 20%;
+            font-size: 30px !important;
+            width:10%;
+            height:30%;
+        }
+        .card-icon {
+            display: inline;
+            position: relative;
+            top:-30px;
+            
+        }
+        .card-min{
+           float: right;
+           margin-right: 15%;
+            font-size: 25px !important;
+            width:20%;
+            height:30%;
+            position: relative;
+            top:-50px;
+            
+        }
+        .card-des{
+            display: none;
+        }
+        .modal-content {
+            background-color: #b61923;
+            margin: auto;
+            padding: 20px;
+            width: 60%;
+          }
+        .modal-element{
+            background-color: #c72626;
+            background-color: #b6192391;
+            width: 100%;
+            height:150px;
+            box-shadow: 0 0 10px 3px rgb(168, 10, 10);
+            display: flex;
+            flex-direction: column;
+            color: #22b2b2;
+            font-size: 16px;
+            text-align: center;
+            text-align: -webkit-center;
+        }
+        .modal-main{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            overflow:auto;
+          }
+          .modal-element:hover {
+            background-color: #92ffff;
+            box-shadow: 0 0 10px 3px #22b2b2;
+            display: flex;
+            flex-direction: column;
+            color: #22b2b2;
+        }
+  }
